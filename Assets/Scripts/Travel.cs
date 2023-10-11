@@ -13,7 +13,10 @@ public class Travel : MonoBehaviour
 
     void Update()
     {
-        float xpos = Mathf.Lerp(r1.position.x, r2.position.x, 0.5f);
+
+        float lerpAmount = 0.5f;
+
+        float xpos = Mathf.Lerp(r1.position.x, r2.position.x, lerpAmount);
         transform.position = new Vector3(xpos, transform.position.y, transform.position.z); 
     }
 }
